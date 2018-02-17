@@ -1,0 +1,7 @@
+User Command: node liri.js my-tweets
+
+ERROR: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+ERROR: Retrieving user tweets -- [object Object]User Command: node liri.js my-tweets
+
+ERROR: Retrieving user tweets -- [object Object]ERROR: Retrieving user tweets -- [object Object]
