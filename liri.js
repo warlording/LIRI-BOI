@@ -26,10 +26,10 @@ function parseCommand(command, arg) {
         break;
     case undefined:
     case "":
-        console.log("Yo im Liri. What do you require? Better not be difficult.");
+        console.log("Yo im Liri. What do you require? Better not be difficult.x");
         break;
     default:
-        console.log("not a command try again idiot!");
+        console.log("Yeah that aint a command, nice try!");
         break;
     }
 };
@@ -48,13 +48,13 @@ function myTweets(){
                 results = 
                     "\nTweet #" 
                     + tick + 
-                    " ===================================\n\n" 
+                    " <><><><><><><><><><><><><><><><><><><><><><><><>\n\n" 
                     + tweets[i].text + 
                     "\n\n  Tweeted on: " 
                     + tweets[i].created_at +
                     "\n  By: @" 
                     + tweets[i].user.screen_name +
-                    "\n====================\o/o\====================";    
+                    "\n<><><><><><><><><><><><><><><><><><><><><><><><>";    
                 console.log(results);
             }
         }
@@ -69,7 +69,7 @@ function spotifySong(song) {
         var foundSong = false;
         for (var i = 0; i < response.tracks.items.length; i++) {
             if (response.tracks.items[i].name.toLowerCase() === song.toLowerCase()) {
-                console.log("Hope this is the right song. If it's not blame Eric for failing to code me properly:\n");
+                console.log("Hope this is the right song. If it's not blame Tanner Daves for failing to code me properly:\n");
                 if (response.tracks.items[i].artists.length > 0) {
                     var artists = response.tracks.items[i].artists.length > 1 ? "  Artists: " : "  Artist: ";
                     for (var j = 0; j < response.tracks.items[i].artists.length; j++) {
@@ -98,10 +98,10 @@ function spotifySong(song) {
 function movieInfo(movie) {
     movie = movie || "The Matrix";
     var queryUrl = "https://www.omdbapi.com/?apikey=trilogy&s=" + movie;
-    console.log("Please wait while I find that movie.\n");
+    console.log("Gimme a sec will yah?.\n");
     request(queryUrl, function (error, response, body) {
         if (error) {
-            console.log("I'm sorry, but I seem to have run into an error.\n  " + error);
+            console.log("I fucked up.\n  " + error);
             return;
         }
         if (body && JSON.parse(body).Search && JSON.parse(body).Search.length > 0) {
